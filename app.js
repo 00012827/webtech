@@ -13,6 +13,16 @@ app.get('/create', (req, res) => {
     res.render('create')
 })
 
+const posts = ['Some funny post', 'Funny two ']
+
+app.get('/posts', (req, res) => {
+    res.render('posts', { posts: posts })
+})
+
+app.get('/posts/detail', (req, res) => {
+    res.render('detail')
+})
+
 app.listen(4000, err => {
     if(err) console.log(err)
 
