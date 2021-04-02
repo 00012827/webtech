@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+  .container
+    h1 Create New post 
+
+    form.form(action="/create" method='POST')
+      label Title
+      input.input(type="text" name='title')
+
+      label User 
+      input.input(type="text" name='title')
+
+      label Description
+      textarea.input(type="text", name="description")
+
+      button.btn Create post 
