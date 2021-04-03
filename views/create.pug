@@ -4,20 +4,26 @@ block content
   .container
     h1 Create New post 
 
+    if error
+      p.error Error happened! Try one more time
+
+    if success
+      p.success Your post was successfully created! 
+
     form.form(action="/create" method='POST')
       label Title
-      input.input(type="text" name='title')
+      input.input(type="text" placeholder="Tile" name='title')
 
-      label First Name 
-      input.input2(type="text" name='name')
+      label Name 
+      input.input2(type="text" placeholder="Name" name='fname')
 
-      label Last Name 
-      input.input2(type="text" name='name')
+      label Surname 
+      input.input2(type="text" placeholder="Surname"  name='sname')
 
-      label E-mail 
-      input.input2(type="text" name='e-mail')
+      label Gmail 
+      input.input2(type="text" placeholder="Gmail" name='gmail')
 
       label Description
-      textarea.input3(type="text", name="description")
+      textarea.input3(type="text", placeholder="Description" name="description")
 
       button.btn Create post 

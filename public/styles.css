@@ -83,7 +83,7 @@ a:hover {
 .input2 {
   display: inline-block;
   padding: 10px;
-  margin: 20px;
+  margin: 30px;
   border: 2px solid greenyellow;
   margin-bottom: 30px;
 
@@ -125,4 +125,23 @@ a:hover {
   color: black;
   border-radius: 25px;
 
+}
+
+.error {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  color: red;
+  background: tan;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 35px;
+}
+
+.success {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 1px solid green;
+  font-size: 1.2rem;
+  color: red;
 }
